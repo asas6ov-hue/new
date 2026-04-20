@@ -1,0 +1,11 @@
+# This file tracks properties of this Dart project.
+# It is used by the Dart analyzer and IDEs to understand your project's structure.
+
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    prefer_const_constructors: true
+    prefer_const_literals_to_create_immutables: true
+    avoid_print: false
+    use_key_in_widget_constructors: true
