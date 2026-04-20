@@ -2,30 +2,29 @@
 # Dependencies
 .dart_tool/
 .packages
-.pub/
-pubspec.lock
 
-# Build artifacts
+# Generated code
+lib/src/generated/
+lib/generated/
+
+# Build outputs
 build/
+dist/
+
+# Logs
+*.log
+**/logs/
 
 # Environment
 .env
 .env.local
 *.env.*
 
-# Logs
-*.log
-
-# Temporary files
-*.tmp
-*.swp
-
 # IDE
-.vscode/
 .idea/
-*.iml
-*.ipr
-*.iws
+.vscode/
+*.swp
+*.swo
 
 # OS
 .DS_Store
