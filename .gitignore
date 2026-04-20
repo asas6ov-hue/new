@@ -5,10 +5,8 @@
 .pub/
 pubspec.lock
 
-# Build
+# Build artifacts
 build/
-**/ios/.generated/
-**/android/.generated/
 
 # Environment
 .env
@@ -17,23 +15,19 @@ build/
 
 # Logs
 *.log
-**/logs
 
-# OS generated files
-.DS_Store
-Thumbs.db
+# Temporary files
+*.tmp
+*.swp
 
 # IDE
 .vscode/
 .idea/
-*.swp
-*.swo
+*.iml
+*.ipr
+*.iws
 
-# Coverage
-coverage/
-*.coverage
-
-# Temporary files
-*.tmp
-*.temp
+# OS
+.DS_Store
+Thumbs.db
 ```
