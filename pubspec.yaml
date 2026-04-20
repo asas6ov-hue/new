@@ -1,0 +1,58 @@
+name: almosaly
+description: تطبيق إسلامي متكامل لعرض مواقيت الصلاة والقرآن الكريم والأذكار والقبلة والأحاديث النبوية.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # UI & Icons
+  cupertino_icons: ^1.0.6
+  google_fonts: ^6.1.0
+  
+  # State Management
+  provider: ^6.1.1
+  
+  # Prayer Times & Location
+  adhan: ^2.0.0+1
+  geolocator: ^10.1.0
+  geocoding: ^2.1.1
+  
+  # Islamic Calendar
+  hijri_calendar: ^3.0.0
+  
+  # Audio
+  audioplayers: ^5.2.1
+  
+  # Storage
+  shared_preferences: ^2.2.2
+  
+  # Compass/Qibla
+  flutter_compass: ^0.7.0+2
+  
+  # Permissions
+  permission_handler: ^11.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/fonts/
+    - assets/audio/
+    - assets/images/
+  
+  fonts:
+    - family: Amiri
+      fonts:
+        - asset: assets/fonts/Amiri-Regular.ttf
+        - asset: assets/fonts/Amiri-Bold.ttf
+          weight: 700
