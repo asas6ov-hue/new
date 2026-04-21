@@ -3,9 +3,11 @@ import 'package:provider/provider.dart';
 import 'providers/location_provider.dart';
 import 'providers/prayer_times_provider.dart';
 import 'providers/settings_provider.dart';
+import 'providers/qibla_provider.dart';
 import 'screens/splash_screen.dart';
 import 'screens/setup_wizard_screen.dart';
 import 'screens/home_screen.dart';
+import 'screens/qibla_compass_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,6 +24,7 @@ class AlmosalyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => LocationProvider()),
         ChangeNotifierProvider(create: (_) => PrayerTimesProvider()),
         ChangeNotifierProvider(create: (_) => SettingsProvider()),
+        ChangeNotifierProvider(create: (_) => QiblaProvider()),
       ],
       child: MaterialApp(
         title: 'تطبيق المصلي',
@@ -46,6 +49,13 @@ class AlmosalyApp extends StatelessWidget {
           '/': (context) => const SplashScreen(),
           '/setup': (context) => const SetupWizardScreen(),
           '/home': (context) => const HomeScreen(),
+          '/qibla': (context) {
+            final locationProvider = Provider.of<LocationProvider>(context, listen: false);
+            return QiblaCompassScreen(
+              latitude: locationProvider.latitude ?? 21.4225,
+              longitude: locationProvider.longitude ?? 39.8262,
+            );
+          },
         },
       ),
     );
