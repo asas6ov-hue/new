@@ -1,36 +1,46 @@
 ```
 # Dependencies
-.dart_tool/
-.packages
 .pub/
-pubspec.lock
+.buildlog
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
 
-# Build artifacts
-build/
-*.apk
-*.aab
-*.app
+# Generated plugin build files
+*.g.dart
 
-# Logs
-*.log
+# Android
+**/android/**/gradle-wrapper.properties
+**/android/capacitor-cordova-android-plugins/
 
-# Environment variables
-.env
-.env.local
-*.env.*
+# iOS
+**/ios/**/*.symlink
+**/ios/Pods/
 
-# IDE files
+# Build outputs
+**/build/
+**/dist/
+
+# IDE
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# OS generated files
-.DS_Store
-Thumbs.db
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
+*.env.*
 
 # Coverage
 coverage/
-htmlcov/
-.coverage
+*.lcov
+
+# Temporary files
+*.tmp
+.DS_Store
+Thumbs.db
 ```

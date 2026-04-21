@@ -31,11 +31,11 @@ dependencies:
   # Storage
   shared_preferences: ^2.2.2
   
-  # Compass/Qibla
-  flutter_compass: ^0.8.0
-  
   # Permissions
   permission_handler: ^11.1.0
+  
+  # Compass & Sensors (Alternative to flutter_compass)
+  sensors_plus: ^4.0.2
 
 dev_dependencies:
   flutter_test:
