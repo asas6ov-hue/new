@@ -32,7 +32,7 @@ dependencies:
   shared_preferences: ^2.2.2
   
   # Compass/Qibla
-  flutter_compass: ^0.7.0+2
+  sensors_plus: ^4.0.2
   
   # Permissions
   permission_handler: ^11.1.0
